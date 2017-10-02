@@ -1,0 +1,12 @@
+{
+    "port": 8000,
+    "files": [
+        "./**/*.{html,htm,css,js}",
+        "!node_modules/",
+        "!.git/",
+        "!bower_components/"
+    ],
+    "server": {
+        "baseDir": "./"
+    }
+}
