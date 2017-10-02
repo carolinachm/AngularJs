@@ -1,0 +1,27 @@
+{
+  "name": "angularjs",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Carolina"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.6",
+    "angular-toastr": "^2.1.1",
+    "angular": "^1.6.6",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "bootswatch": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "ng-img-crop": "ngImgCrop#0.3.2"
+  }
+}
