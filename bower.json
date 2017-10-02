@@ -6,7 +6,7 @@
     "Carolina"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/carolinachm/AngularJs",
   "ignore": [
     "**/.*",
     "node_modules",

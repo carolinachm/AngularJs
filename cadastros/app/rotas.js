@@ -1,31 +1,36 @@
-(function(){
+(function () {
     'use strict';
-    angular.module('vendaapp').config(function($routeProvider){
-        $routeProvider
-        .when('/',{
-            controller:'HomeCtrl',
-            controllerAs:'vm',
-            templateUrl:'paginas/home/index.html'
-        })
-         .when('/produtos',{
-            controller:'ProdutosConsultaCtrl',
-            controllerAs:'vm',
-            templateUrl:'paginas/produto/consulta.html'
-        })
-         .when('/produtos/inclusao',{
-            controller:'ProdutoInclusaoCtrl',
-            controllerAs:'vm',
-            templateUrl:'paginas/home/inclusao.html'
-        })
-         .when('/produtos/alteracao/:id',{
-            controller:'PordutaoAlteracaoCtrl',
-            controllerAs:'vm',
-            templateUrl:'paginas/home/alteracao.html'
-        })
-          .when('/produtos/exclusao/:id',{
-            controller:'PordutaoExclusaoCtrl',
-            controllerAs:'vm',
-            templateUrl:'paginas/home/alteracao.html'
+
+    angular.module('mwa').config(function ($routeProvider, $httpProvider) {
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false
         });
+        $routeProvider
+            .when('/', {
+                controller: 'HomeCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'paginas/home/index.html'
+            })
+            .when('/produtos', {
+                controller: 'ProdutoConsultaCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'paginas/produto/consulta.html'
+            })
+            .when('/produtos/inclusao', {
+                controller: 'ProdutoInclusaoCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'paginas/produto/inclusao.html'
+            })
+            .when('/produtos/alteracao/:id', {
+                controller: 'ProdutoAlteracaoCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'paginas/produto/alteracao.html'
+            })
+            .when('/produtos/exclusao/:id', {
+                controller: 'ProdutoExclusaoCtrl',
+                controllerAs: 'vm',
+                templateUrl: 'paginas/produto/alteracao.html'
+            });
     });
 })();
